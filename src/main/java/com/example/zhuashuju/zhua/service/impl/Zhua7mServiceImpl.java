@@ -176,7 +176,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             // 关闭线程池
             threadPool.shutdown();
             // todo 本地测试，每次要销毁 WebDriver 池
-            closeWebDriverPool();
+            //closeWebDriverPool();
 
 
         }
@@ -514,10 +514,15 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             // 主场总场数所有 tr
             List<WebElement> listZhuChangAll = new ArrayList<>();
             try {
-                listZhuChangAll = webElement.findElement(By.id("tbTeamHistory_A_all")) // 找到主场所有场次table
-                        .findElements(By.tagName("tr"));// 找到主场总场数 table 的 tr
-                // 筛选 tr
-                listZhuChangAll = getGuiZe2WebElementList(listZhuChangAll, zhuKe);
+                listZhuChangAll = webElement.findElement(By.id("tbTeamHistory_A_all"))
+                        .findElements(By.className("tr_l0"));
+                try {
+                    // 可能会存在一场比赛，就只有 tr_10 ，tr_l1 会找不到报错
+                    listZhuChangAll.addAll(webElement.findElement(By.id("tbTeamHistory_A_all"))
+                            .findElements(By.className("tr_l1")));
+                } catch (Exception e) {
+                    System.out.println("规则2 " + zhuKe + " 主场所有场次>只有一场比赛");
+                }
             } catch (Exception e) {
                 System.out.println("规则2 " + zhuKe + " 主场所有场次>未找到比赛记录");
             }
@@ -527,10 +532,15 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             try {
                 // 执行 js 方法，显示主场比赛
                 ((JavascriptExecutor) driver).executeScript("showTS('A',1)");
-                listZhuChang = webElement.findElement(By.id("tbTeamHistory_A_home")) // 找到主场 table
-                        .findElements(By.tagName("tr"));// 找到主场 table 的 tr
-                // 筛选 tr
-                listZhuChang = getGuiZe2WebElementList(listZhuChang, zhuKe);
+                listZhuChang = webElement.findElement(By.id("tbTeamHistory_A_home"))
+                        .findElements(By.className("tr_l0"));
+                try {
+                    // 可能会存在一场比赛，就只有 tr_10 ，tr_l1 会找不到报错
+                    listZhuChang.addAll(webElement.findElement(By.id("tbTeamHistory_A_home"))
+                            .findElements(By.className("tr_l1")));
+                } catch (Exception e) {
+                    System.out.println("规则2 " + zhuKe + " 主场>只有一场比赛");
+                }
             } catch (Exception e) {
                 System.out.println("规则2 " + zhuKe + " 主场>未找到比赛记录");
             }
@@ -538,10 +548,15 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             // 客场总场数所有 tr
             List<WebElement> listKeChangAll = new ArrayList<>();
             try {
-                listKeChangAll = webElement.findElement(By.id("tbTeamHistory_B_all")) // 找到客场所有场次table
-                        .findElements(By.tagName("tr"));// 找到客场总场数 table 的 tr
-                // 筛选 tr
-                listKeChangAll = getGuiZe2WebElementList(listKeChangAll, zhuKe);
+                listKeChangAll = webElement.findElement(By.id("tbTeamHistory_B_all"))
+                        .findElements(By.className("tr_l2"));
+                try {
+                    // 可能会存在一场比赛，就只有 tr_10 ，tr_l1 会找不到报错
+                    listKeChangAll.addAll(webElement.findElement(By.id("tbTeamHistory_B_all"))
+                            .findElements(By.className("tr_l3")));
+                } catch (Exception e) {
+                    System.out.println("规则2 " + zhuKe + " 客场总场次>只有一场比赛");
+                }
             } catch (Exception e) {
                 System.out.println("规则2 " + zhuKe + " 客场总场次>未找到比赛记录");
             }
@@ -551,10 +566,15 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             try {
                 // 执行 js 方法，显示客场比赛
                 ((JavascriptExecutor) driver).executeScript("showTS('B',1)");
-                listKeChang = webElement.findElement(By.id("tbTeamHistory_B_away")) // 找到客场 table
-                        .findElements(By.tagName("tr"));// 找到客场 table 的 tr
-                // 筛选 tr
-                listKeChang = getGuiZe2WebElementList(listKeChang, zhuKe);
+                listKeChang = webElement.findElement(By.id("tbTeamHistory_B_away"))
+                        .findElements(By.className("tr_l2"));
+                try {
+                    // 可能会存在一场比赛，就只有 tr_10 ，tr_l1 会找不到报错
+                    listKeChang.addAll(webElement.findElement(By.id("tbTeamHistory_B_away"))
+                            .findElements(By.className("tr_l3")));
+                } catch (Exception e) {
+                    System.out.println("规则2 " + zhuKe + " 客场>只有一场比赛");
+                }
             } catch (Exception e) {
                 System.out.println("规则2 " + zhuKe + " 客场>未找到比赛记录");
             }
@@ -563,6 +583,11 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             listZhuChangAll.addAll(listZhuChang);
             listZhuChangAll.addAll(listKeChangAll);
             listZhuChangAll.addAll(listKeChang);
+
+            Integer listSize = listZhuChangAll.size();
+
+            // 筛选 tr
+            listZhuChangAll = getGuiZe2WebElementList(listZhuChangAll, zhuKe);
 
             //Long endTime111 = System.currentTimeMillis();
             //System.out.println("规则2 " + zhuKe + ",汇总 消耗时间：" + (endTime111 - beginTime));
@@ -573,7 +598,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             }
 
             Long endTime = System.currentTimeMillis();
-            System.out.println("规则2 " + zhuKe + ",共" + listZhuChangAll.size() + "场比赛，抓取数据消耗时间：" + (endTime - beginTime));
+            System.out.println("规则2 " + zhuKe + ",共" + listSize + "场比赛，抓取数据消耗时间：" + (endTime - beginTime));
             return listZhuChangAll.size();
         } catch (Exception e) {
             System.out.println(zhuKe + " 规则2，抓取数据异常！！！！");
