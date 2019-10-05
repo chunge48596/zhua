@@ -1,0 +1,516 @@
+2019-09-05 10:56:45.209 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 10:56:45.219 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 10:56:45.220 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 10:56:45.419 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 10:56:45.569 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 10:56:45.587 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ba54932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@28975c28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3943a2be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@343570b7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157853da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71c3b41, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@236e3f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dd0c991]
+2019-09-05 10:56:46.133 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 18044 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 10:56:46.134 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 10:56:48.386 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 10:56:49.019 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 3.349 seconds (JVM running for 4.785)
+2019-09-05 10:56:49.562 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:33:50.299 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 6328 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 11:33:50.306 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 11:33:52.194 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 11:33:52.219 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-09-05 11:33:52.238 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 11:33:52.239 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 11:33:52.254 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 11:33:52.763 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 11:33:52.773 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 11:33:52.773 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2353 ms
+2019-09-05 11:33:53.220 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:33:53.579 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-09-05 11:33:53.600 [main] ERROR org.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.zhuashuju.ZhuashujuApplication.main(ZhuashujuApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-09-05 11:33:53.626 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2019-09-05 11:33:53.626 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 11:33:53.644 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-09-05 11:33:53.645 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2019-09-05 11:33:53.645 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2019-09-05 11:33:53.650 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 11:33:53.660 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-09-05 11:33:53.666 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:34:30.079 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 14508 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 11:34:30.084 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 11:34:31.743 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-09-05 11:34:31.765 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.31.145-8080"]
+2019-09-05 11:34:31.776 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 11:34:31.777 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 11:34:31.786 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 11:34:32.124 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 11:34:32.131 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 11:34:32.132 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1958 ms
+2019-09-05 11:34:32.530 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:34:32.945 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.31.145-8080"]
+2019-09-05 11:34:32.970 [main] ERROR org.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.zhuashuju.ZhuashujuApplication.main(ZhuashujuApplication.java:10)
+Caused by: java.net.BindException: Cannot assign requested address: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-09-05 11:34:32.998 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-0.0.31.145-8080"]
+2019-09-05 11:34:32.999 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-09-05 11:34:33.014 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-09-05 11:34:33.014 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.31.145-8080"]
+2019-09-05 11:34:33.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-0.0.31.145-8080"]
+2019-09-05 11:34:33.019 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-05 11:34:33.029 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-09-05 11:34:33.034 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:34:48.441 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 19048 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 11:34:48.446 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 11:34:50.112 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 11:34:50.135 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:34:50.146 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 11:34:50.147 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 11:34:50.156 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 11:34:50.536 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 11:34:50.548 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 11:34:50.548 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2011 ms
+2019-09-05 11:34:51.009 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:34:51.405 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:34:51.528 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 11:34:51.535 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 3.701 seconds (JVM running for 5.124)
+2019-09-05 11:35:11.971 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 11:35:11.971 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 11:35:11.979 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-09-05 11:37:50.391 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 7108 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 11:37:50.395 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 11:37:52.149 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 11:37:52.177 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:37:52.204 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 11:37:52.205 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 11:37:52.220 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 11:37:52.626 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 11:37:52.634 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 11:37:52.634 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2175 ms
+2019-09-05 11:37:53.034 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:37:53.264 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:37:53.305 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 11:37:53.310 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 3.442 seconds (JVM running for 4.947)
+2019-09-05 11:38:01.179 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 11:38:01.180 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 11:38:01.189 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-09-05 11:40:21.756 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 7880 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 11:40:21.764 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 11:40:23.858 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 11:40:23.884 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:40:23.897 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 11:40:23.898 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 11:40:23.908 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 11:40:24.298 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 11:40:24.305 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 11:40:24.305 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2439 ms
+2019-09-05 11:40:24.687 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:40:25.172 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:40:25.248 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 11:40:25.254 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 4.236 seconds (JVM running for 5.915)
+2019-09-05 11:40:32.666 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 11:40:32.666 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 11:40:32.675 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-09-05 11:45:11.052 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 11876 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 11:45:11.058 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 11:45:12.863 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 11:45:12.888 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:45:12.899 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 11:45:12.899 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 11:45:12.908 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 11:45:13.283 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 11:45:13.290 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 11:45:13.290 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2137 ms
+2019-09-05 11:45:13.809 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 11:45:14.239 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 11:45:14.297 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 11:45:14.303 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 4.077 seconds (JVM running for 5.418)
+2019-09-05 11:45:16.099 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 11:45:16.099 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 11:45:16.106 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-09-05 12:45:42.391 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 19908 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 12:45:42.398 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 12:45:44.668 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 12:45:44.706 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:45:44.738 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 12:45:44.739 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 12:45:44.768 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 12:45:45.725 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 12:45:45.738 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 12:45:45.738 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3210 ms
+2019-09-05 12:45:46.563 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 12:45:46.990 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:45:47.053 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 12:45:47.059 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 5.421 seconds (JVM running for 7.484)
+2019-09-05 12:46:56.797 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 12:46:56.798 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 12:46:56.806 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-09-05 12:55:33.298 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 19556 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 12:55:33.305 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 12:55:35.174 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 12:55:35.200 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:55:35.214 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 12:55:35.215 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 12:55:35.226 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 12:55:35.932 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 12:55:35.948 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 12:55:35.948 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2564 ms
+2019-09-05 12:55:36.578 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 12:55:37.016 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:55:37.070 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 12:55:37.075 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 4.549 seconds (JVM running for 6.327)
+2019-09-05 12:55:50.145 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 12:55:50.145 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 12:55:50.154 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-09-05 12:57:04.341 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 11844 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 12:57:04.352 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 12:57:06.314 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 12:57:06.338 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:57:06.352 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 12:57:06.353 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 12:57:06.363 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 12:57:07.017 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 12:57:07.032 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 12:57:07.033 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2547 ms
+2019-09-05 12:57:07.656 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 12:57:08.064 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:57:08.119 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 12:57:08.125 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 4.684 seconds (JVM running for 6.646)
+2019-09-05 12:57:23.537 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 12:57:23.537 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 12:57:23.544 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-09-05 12:59:04.573 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 10500 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 12:59:04.580 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 12:59:06.967 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 12:59:06.990 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:59:07.004 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 12:59:07.005 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 12:59:07.014 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 12:59:07.464 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 12:59:07.472 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 12:59:07.472 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2769 ms
+2019-09-05 12:59:07.959 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 12:59:08.508 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 12:59:08.615 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 12:59:08.624 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 4.851 seconds (JVM running for 6.66)
+2019-09-05 13:43:12.716 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 13:43:12.718 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 13:43:12.755 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 36 ms
+2019-09-05 13:45:45.464 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Starting ZhuashujuApplication on SC-201908131601 with PID 15804 (D:\IdeaWorkspace\zhuashuju\target\classes started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 13:45:45.471 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - No active profile set, falling back to default profiles: default
+2019-09-05 13:45:47.564 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-09-05 13:45:47.589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-09-05 13:45:47.610 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-05 13:45:47.611 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-09-05 13:45:47.630 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\soft\Git\cmd;D:\soft\chromedriver_win32;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\soft\SSH;.]
+2019-09-05 13:45:48.192 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-09-05 13:45:48.202 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-05 13:45:48.202 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2606 ms
+2019-09-05 13:45:48.634 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 13:45:49.061 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-09-05 13:45:49.123 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-05 13:45:49.130 [main] INFO  com.example.zhuashuju.ZhuashujuApplication - Started ZhuashujuApplication in 4.444 seconds (JVM running for 6.355)
+2019-09-05 13:45:58.239 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-05 13:45:58.240 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-05 13:45:58.247 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-09-05 13:46:23.157 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:32.078 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:34.496 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:37.049 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:39.529 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:41.908 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:44.284 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:46.788 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:49.240 [Forwarding newSession on session null to remote] INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2019-09-05 13:46:49.414 [http-nio-8081-exec-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - ========================== 2019-09-05 共: 136 场比赛==========================
+2019-09-05 13:46:51.316 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,保加利亚(U19) VS 北马其顿(U19)
+2019-09-05 13:46:51.352 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,皇家社会 VS 阿拉维斯
+2019-09-05 13:46:51.391 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,关岛 VS 马尔代夫
+2019-09-05 13:46:51.457 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,安道尔(U21) VS 奥地利(U21)
+2019-09-05 13:46:51.498 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,匈牙利(沙滩)(中) VS 格鲁吉亚(沙滩)
+2019-09-05 13:46:51.595 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,卡昂 VS 南特
+2019-09-05 13:46:51.864 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,耐斯茨奥纳 VS 哈迪拉
+2019-09-05 13:46:52.059 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,普斯卡斯学院 VS 托波拉
+2019-09-05 13:46:56.570 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,韦恩(中) VS 门兴格拉德巴赫
+2019-09-05 13:46:56.612 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,顿涅茨克矿工 VS 高华尤夫卡
+2019-09-05 13:46:56.948 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,乌拉尔B队 VS 伏尔加乌里扬诺夫斯克
+2019-09-05 13:46:57.468 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,朝鲜 VS 黎巴嫩
+2019-09-05 13:46:57.792 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,德国(U21) VS 希腊(U21)
+2019-09-05 13:46:57.851 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,希腊人竞技 VS 迪加尼斯
+2019-09-05 13:46:58.555 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,罗切拉 VS 克罗托内
+2019-09-05 13:46:59.091 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 匈牙利(沙滩)(中) VS 格鲁吉亚(沙滩) 客场>未找到比赛记录
+2019-09-05 13:46:59.887 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,蒙古 VS 缅甸
+2019-09-05 13:47:02.583 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,卡塔尔 VS 阿富汗
+2019-09-05 13:47:03.084 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,纳夫特 VS 哈法利阿瓦兹
+2019-09-05 13:47:03.312 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,捷克(沙滩)(中) VS 罗马尼亚(沙滩)
+2019-09-05 13:47:03.652 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,苏格兰(U19) VS 日本(U19)
+2019-09-05 13:47:03.815 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,巴林 VS 伊拉克
+2019-09-05 13:47:03.977 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,柏林联(中) VS 卓尼特斯
+2019-09-05 13:47:04.318 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,乌法B队 VS 拉达陶里亚蒂
+2019-09-05 13:47:04.358 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,清莱联 VS 缅甸国奥
+2019-09-05 13:47:05.418 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,维克多利 VS 桑德捷斯基
+2019-09-05 13:47:07.119 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,阿尔塔奇 VS 瓦杜兹
+2019-09-05 13:47:07.428 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,荷兰(U18) VS 丹麦(U18)
+2019-09-05 13:47:07.858 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,庆州FC女足 VS 华川KSPO女足
+2019-09-05 13:47:08.226 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,赫拉克莱斯后备队 VS 费耶诺德后备队
+2019-09-05 13:47:08.454 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,葡萄牙(沙滩) VS 土耳其(沙滩)
+2019-09-05 13:47:09.169 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,报恩尚武女足 VS 昌宁女足
+2019-09-05 13:47:09.216 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,日本 VS 巴拉圭
+2019-09-05 13:47:10.824 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,科威特 VS 尼泊尔
+2019-09-05 13:47:11.671 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,沙特阿拉伯 VS 马里
+2019-09-05 13:47:12.655 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,龟尾女足 VS 仁川现代制铁女足
+2019-09-05 13:47:12.959 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,中国(U22) VS 朝鲜(U22)
+2019-09-05 13:47:13.222 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,京兰堡斯 VS BK风暴
+2019-09-05 13:47:13.609 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,克罗地亚(U21) VS 阿联酋(U21)
+2019-09-05 13:47:13.719 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,首尔市厅女足 VS 水原FMC女足
+2019-09-05 13:47:13.750 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,昆士柏SC女足 VS 巴尔卡塔女足
+2019-09-05 13:47:14.300 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,图卢兹 VS 毕尔巴鄂竞技
+2019-09-05 13:47:14.470 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,雷克尼 VS 凯夫拉维克
+2019-09-05 13:47:16.934 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 克罗地亚(U21) VS 阿联酋(U21) 客场>未找到比赛记录
+2019-09-05 13:47:17.602 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,洛斯查兰特后备队 VS 布隆德比后备队
+2019-09-05 13:47:18.185 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,哈萨克斯坦(沙滩)(中) VS 希腊(沙滩)
+2019-09-05 13:47:20.795 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,坡步任瑟 VS 马洛卡
+2019-09-05 13:47:20.989 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,卡萨布兰卡维达德 VS 拉巴特皇家武装
+2019-09-05 13:47:21.270 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,中国台北 VS 约旦
+2019-09-05 13:47:21.280 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 哈萨克斯坦(沙滩)(中) VS 希腊(沙滩) 主场>未找到比赛记录
+2019-09-05 13:47:21.418 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,利恩比后备队 VS 哥本哈根后备队
+2019-09-05 13:47:21.603 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,波赫亚塔林B队 VS 维姆斯
+2019-09-05 13:47:21.716 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,英格兰(U20) VS 荷兰(U20)
+2019-09-05 13:47:22.568 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,爱沙尼亚(沙滩)(中) VS 阿塞拜疆(沙滩)
+2019-09-05 13:47:23.001 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,索克尔阿勒克山卓 VS 康戈迪亚隆格
+2019-09-05 13:47:24.820 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,巴拉纳竞技青年队 VS 科里蒂巴青年队
+2019-09-05 13:47:25.890 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,卡迪夫城女足 VS 凯恩舍姆女足
+2019-09-05 13:47:26.100 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,柬埔寨 VS 中国香港
+2019-09-05 13:47:26.287 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,塞舌尔 VS 卢旺达
+2019-09-05 13:47:26.332 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,苏格兰(U21) VS 圣马力诺(U21)
+2019-09-05 13:47:26.465 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,贝拉维斯塔RJ VS 凯马杜斯RJ
+2019-09-05 13:47:26.582 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,泰国 VS 越南
+2019-09-05 13:47:26.728 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,菲律宾 VS 叙利亚
+2019-09-05 13:47:28.181 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,卡西米鲁迪阿布雷乌 VS 巴塞罗那SP
+2019-09-05 13:47:30.263 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,克拉斯诺雅茨克女足 VS 伊泽夫斯克鱼雷女足
+2019-09-05 13:47:30.901 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,里约圣保罗RJ VS 圣塔库鲁RJ
+2019-09-05 13:47:31.185 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,圣珀尔滕 VS 柏斯澄
+2019-09-05 13:47:31.649 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,摩洛哥国奥 VS 马里国奥
+2019-09-05 13:47:31.745 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,幸运艾迪克 VS 特里巴尔
+2019-09-05 13:47:31.846 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,新加坡 VS 也门
+2019-09-05 13:47:32.133 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,伊塔布莱波弗特 VS 巴拉曼萨
+2019-09-05 13:47:33.158 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,爱尔兰 VS 瑞士
+2019-09-05 13:47:34.251 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,明斯克女足 VS 佐卡BDU女足
+2019-09-05 13:47:35.390 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,北爱尔兰 VS 卢森堡
+2019-09-05 13:47:35.799 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,黑山 VS 匈牙利
+2019-09-05 13:47:36.172 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,直布罗陀 VS 丹麦
+2019-09-05 13:47:36.250 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,韩国(中) VS 格鲁吉亚
+2019-09-05 13:47:36.644 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,印度尼西亚 VS 马来西亚
+2019-09-05 13:47:37.050 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,罗马尼亚 VS 西班牙
+2019-09-05 13:47:38.552 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,诺斯塔 VS 切亚宾斯克
+2019-09-05 13:47:40.107 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,斯托克城女足 VS 西布朗维奇女足
+2019-09-05 13:47:40.473 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,泽尼特伊泽夫斯克 VS 阿克伦托格里蒂
+2019-09-05 13:47:41.617 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,印度 VS 阿曼
+2019-09-05 13:47:41.711 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,德比郡女足 VS 拉夫堡狐狸女足
+2019-09-05 13:47:42.006 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,挪威 VS 马耳他
+2019-09-05 13:47:42.167 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,白俄罗斯(沙滩)(中) VS 俄罗斯(沙滩)
+2019-09-05 13:47:42.320 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,法罗群岛 VS 瑞典
+2019-09-05 13:47:43.988 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,克罗地亚(U19) VS 俄罗斯(U19)
+2019-09-05 13:47:44.633 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,法国(U21) VS 阿尔巴尼亚(U21)
+2019-09-05 13:47:46.379 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,拉达索克 VS 卡马斯
+2019-09-05 13:47:47.417 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,芬兰 VS 希腊
+2019-09-05 13:47:47.980 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,多米尼克 VS 苏里南
+2019-09-05 13:47:48.523 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,以色列 VS 北马其顿
+2019-09-05 13:47:48.685 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,巴勒斯坦 VS 乌兹别克斯坦
+2019-09-05 13:47:49.836 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,乍得 VS 苏丹
+2019-09-05 13:47:50.044 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,斯里兰卡 VS 土库曼斯坦
+2019-09-05 13:47:50.319 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,美属维京群岛 VS 开曼群岛
+2019-09-05 13:47:51.646 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,维勒斯 VS 特诺皮尔
+2019-09-05 13:47:52.223 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,诺丁汉森林女足 VS 谢菲尔德女足
+2019-09-05 13:47:52.806 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,塔吉克斯坦 VS 吉尔吉斯斯坦
+2019-09-05 13:47:52.836 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,波黑 VS 列支敦士登
+2019-09-05 13:47:53.419 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,坎图劳 VS 皇家加西拉索
+2019-09-05 13:47:54.523 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,豪卡尔 VS 尼哈德维克
+2019-09-05 13:47:55.592 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,德国(U20) VS 捷克(U20)
+2019-09-05 13:47:56.520 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,葡萄牙(U21) VS 直布罗陀(U21)
+2019-09-05 13:47:56.683 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,沃尔夫斯堡 VS 汉堡
+2019-09-05 13:47:57.675 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,萨尔茨堡 VS 列特
+2019-09-05 13:47:57.808 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,汤加女足(U19)(中) VS 巴布亚新几内亚女足(U19)
+2019-09-05 13:47:57.842 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,格林纳达 VS 圣基茨及尼维斯
+2019-09-05 13:47:58.288 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,巴巴多斯 VS 法属圣马丁岛
+2019-09-05 13:47:58.920 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,利马素尔 VS 艾里斯利马素尔
+2019-09-05 13:47:59.532 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 汤加女足(U19)(中) VS 巴布亚新几内亚女足(U19) 主场>未找到比赛记录
+2019-09-05 13:48:00.383 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,弗赖堡 VS 阿劳
+2019-09-05 13:48:00.522 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,雷加塔斯 VS 巴拉纳
+2019-09-05 13:48:01.628 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,斐济女足(U19)(中) VS 瓦努阿图女足(U19)
+2019-09-05 13:48:02.182 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,意大利(沙滩)(中) VS 乌克兰(沙滩)
+2019-09-05 13:48:03.223 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,百慕大 VS 巴拿马
+2019-09-05 13:48:03.462 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,瑞士(U19) VS 捷克(U19)
+2019-09-05 13:48:04.177 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,爱沙尼亚(U21) VS 保加利亚(U21)
+2019-09-05 13:48:04.946 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,索马里 VS 津巴布韦
+2019-09-05 13:48:05.322 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,尼加拉瓜 VS 圣文森特及格林纳丁斯
+2019-09-05 13:48:05.358 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,洪都拉斯 VS 波多黎各
+2019-09-05 13:48:05.798 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,帕拉利姆尼 VS 亚吉纳帕
+2019-09-05 13:48:06.460 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 斐济女足(U19)(中) VS 瓦努阿图女足(U19) 主场>未找到比赛记录
+2019-09-05 13:48:06.575 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,法属圭亚那 VS 伯利兹
+2019-09-05 13:48:07.713 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,斯洛文尼亚(U19) VS 法国(U19)
+2019-09-05 13:48:07.896 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,秘鲁(中) VS 厄瓜多尔
+2019-09-05 13:48:08.557 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,意大利(U20) VS 波兰(U20)
+2019-09-05 13:48:09.582 [pool-1-thread-6] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:5 正在抓取,智利(中) VS 阿根廷
+2019-09-05 13:48:09.828 [pool-1-thread-2] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:1 正在抓取,瓜达卢普 VS 肯塔吉内斯
+2019-09-05 13:48:10.623 [pool-1-thread-1] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:0 正在抓取,兰斯 VS 南锡
+2019-09-05 13:48:10.716 [pool-1-thread-4] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:3 正在抓取,危地马拉 VS 安圭拉
+2019-09-05 13:48:10.951 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,格鲁吉亚(U21) VS 列支敦士登(U21)
+2019-09-05 13:48:11.331 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,瑞士(沙滩)(中) VS 西班牙(沙滩)
+2019-09-05 13:48:11.566 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:7 正在抓取,库克群岛女足(U19) VS 所罗门女足(U19)
+2019-09-05 13:48:11.754 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,法肯柏尔(U21) VS 哈尔姆斯达斯(U21)
+2019-09-05 13:48:12.974 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 瑞士(沙滩)(中) VS 西班牙(沙滩) 主场>未找到比赛记录
+2019-09-05 13:48:13.283 [pool-1-thread-8] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 库克群岛女足(U19) VS 所罗门女足(U19) 客场>未找到比赛记录
+2019-09-05 13:48:14.087 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,布拉格斯拉维亚 VS 治鲁迪
+2019-09-05 13:48:14.125 [pool-1-thread-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:4 正在抓取,葡萄牙(U20) VS 瑞士(U20)
+2019-09-05 13:48:15.116 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,亚美尼亚 VS 意大利
+2019-09-05 13:48:16.567 [pool-1-thread-3] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:2 正在抓取,萨拉米斯 VS 西洛特姆普
+2019-09-05 13:48:18.013 [pool-1-thread-7] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - 线程:6 正在抓取,苏拉 VS 埃格尔松斯
+2019-09-05 13:48:19.590 [http-nio-8081-exec-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - ==========================统计结果==========================
+2019-09-05 13:48:19.590 [http-nio-8081-exec-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - ==========================排序结果==========================
+2019-09-05 13:48:19.612 [http-nio-8081-exec-5] INFO  c.e.zhuashuju.zhua.service.impl.Zhua7mServiceImpl - ===========程序退出===============
+2019-09-05 13:49:45.905 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 13:49:45.913 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 13:49:45.914 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 13:49:46.085 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 13:49:46.233 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 13:49:46.251 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ba54932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@28975c28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3943a2be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@343570b7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157853da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71c3b41, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@236e3f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dd0c991]
+2019-09-05 13:49:46.690 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 23684 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 13:49:46.691 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 13:49:49.022 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 13:49:49.724 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 3.422 seconds (JVM running for 4.829)
+2019-09-05 13:49:50.172 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 13:50:21.750 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 13:50:21.757 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 13:50:21.758 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 13:50:21.932 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 13:50:22.069 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 13:50:22.084 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ba54932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@28975c28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3943a2be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@343570b7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157853da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71c3b41, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@236e3f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dd0c991]
+2019-09-05 13:50:22.532 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 25072 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 13:50:22.533 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 13:50:25.180 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 13:50:25.892 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 3.747 seconds (JVM running for 5.24)
+2019-09-05 13:50:26.330 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 14:19:57.601 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 14:19:57.615 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 14:19:57.616 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 14:19:57.855 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 14:19:58.042 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 14:19:58.062 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ba54932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@28975c28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3943a2be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@343570b7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157853da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71c3b41, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@236e3f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dd0c991]
+2019-09-05 14:19:58.629 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 23344 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 14:19:58.631 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 14:20:01.464 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 14:20:02.278 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 4.148 seconds (JVM running for 5.778)
+2019-09-05 14:20:02.738 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 14:31:31.762 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 14:31:31.772 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 14:31:31.773 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 14:31:31.930 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 14:31:32.050 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 14:31:32.066 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ba54932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@28975c28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3943a2be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@343570b7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157853da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71c3b41, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@236e3f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dd0c991]
+2019-09-05 14:31:32.521 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 4428 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 14:31:32.523 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 14:31:34.994 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 14:31:35.592 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 3.455 seconds (JVM running for 4.736)
+2019-09-05 14:31:36.033 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 14:43:00.137 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 14:43:00.144 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 14:43:00.145 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 14:43:00.276 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 14:43:00.376 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 14:43:00.390 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3943a2be, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@343570b7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@157853da, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@71c3b41, org.springframework.test.context.support.DirtiesContextTestExecutionListener@236e3f4e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@dd0c991, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5f16132a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@69fb6037]
+2019-09-05 14:43:00.785 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 14192 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 14:43:00.786 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 14:43:02.882 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 14:43:03.379 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 2.945 seconds (JVM running for 4.061)
+2019-09-05 14:43:03.771 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-05 15:14:22.851 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zhuashuju.ZhuashujuApplicationTests], using SpringBootContextLoader
+2019-09-05 15:14:22.851 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-05 15:14:22.851 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.zhuashuju.ZhuashujuApplicationTests]: ZhuashujuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-05 15:14:22.961 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.zhuashuju.ZhuashujuApplication for test class com.example.zhuashuju.ZhuashujuApplicationTests
+2019-09-05 15:14:23.070 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-05 15:14:23.086 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ba54932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@28975c28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3943a2be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@343570b7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@157853da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71c3b41, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@236e3f4e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc1435c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bf0219d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dd0c991]
+2019-09-05 15:14:23.414 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Starting ZhuashujuApplicationTests on SC-201908131601 with PID 5404 (started by Administrator in D:\IdeaWorkspace\zhuashuju)
+2019-09-05 15:14:23.414 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - No active profile set, falling back to default profiles: default
+2019-09-05 15:14:24.867 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-05 15:14:25.258 [main] INFO  com.example.zhuashuju.ZhuashujuApplicationTests - Started ZhuashujuApplicationTests in 2.125 seconds (JVM running for 2.985)
+2019-09-05 15:14:25.539 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
