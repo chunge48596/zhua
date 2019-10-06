@@ -749,44 +749,46 @@ public class Zhua7mServiceImpl implements Zhua7mService {
         // 创建文件
         createDataFile();*/
 
-        File file = new File(pathFileName);
-        // 如果文件存在，则进行下载
-        if (file.exists()) {
-            // 配置文件下载
-            response.setHeader("content-type", "application/octet-stream");
-            //response.setContentType("application/octet-stream");
-            // 设置内容类型
-            response.setContentType("text/html");
-            // 下载文件能正常显示中文
-            response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(fileName, "UTF-8"));
+        if (pathFileName != null) {
+            File file = new File(pathFileName);
+            // 如果文件存在，则进行下载
+            if (file.exists()) {
+                // 配置文件下载
+                response.setHeader("content-type", "application/octet-stream");
+                //response.setContentType("application/octet-stream");
+                // 设置内容类型
+                response.setContentType("text/html");
+                // 下载文件能正常显示中文
+                response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(fileName, "UTF-8"));
 
-            // 实现文件下载
-            byte[] buffer = new byte[1024];
-            FileInputStream fis = null;
-            BufferedInputStream bis = null;
-            try {
-                fis = new FileInputStream(file);
-                bis = new BufferedInputStream(fis);
-                OutputStream os = response.getOutputStream();
-                int i = bis.read(buffer);
-                while (i != -1) {
-                    os.write(buffer, 0, i);
-                    i = bis.read(buffer);
+                // 实现文件下载
+                byte[] buffer = new byte[1024];
+                FileInputStream fis = null;
+                BufferedInputStream bis = null;
+                try {
+                    fis = new FileInputStream(file);
+                    bis = new BufferedInputStream(fis);
+                    OutputStream os = response.getOutputStream();
+                    int i = bis.read(buffer);
+                    while (i != -1) {
+                        os.write(buffer, 0, i);
+                        i = bis.read(buffer);
+                    }
+                    System.out.println("Download the song successfully!");
+                    // log.info("Download the song successfully!");
+                } catch (Exception e) {
+                    System.out.println("Download the song failed!");
+                    // log.info("Download the song failed!");
+                } finally {
+                    if (bis != null) {
+                        bis.close();
+                    }
+                    if (fis != null) {
+                        fis.close();
+                    }
+                    // 更新文件名，防止直接调用下载链接，再次下载
+                    // file.renameTo();
                 }
-                System.out.println("Download the song successfully!");
-                // log.info("Download the song successfully!");
-            } catch (Exception e) {
-                System.out.println("Download the song failed!");
-                // log.info("Download the song failed!");
-            } finally {
-                if (bis != null) {
-                    bis.close();
-                }
-                if (fis != null) {
-                    fis.close();
-                }
-                // 更新文件名，防止直接调用下载链接，再次下载
-                // file.renameTo();
             }
         }
     }
