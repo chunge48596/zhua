@@ -175,8 +175,8 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             webDriver.quit();
             // 关闭线程池
             threadPool.shutdown();
-            // todo 本地测试，每次要销毁 WebDriver 池
-            //closeWebDriverPool();
+            // 销毁 WebDriver 池
+            closeWebDriverPool();
 
 
         }
