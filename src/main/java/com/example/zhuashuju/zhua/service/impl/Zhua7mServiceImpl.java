@@ -245,9 +245,9 @@ public class Zhua7mServiceImpl implements Zhua7mService {
         prefs.put("profile.managed_default_content_settings.images", 2); // 2就是代表禁止加载的意思
         options.setExperimentalOption("prefs", prefs);
 
-        // webdriverPath todo 这里不用指定 webDriver 也能用，我操了
-        /*System.getProperties().setProperty("webdriver.chrome.driver",
-                webdriverPath);*/
+        // webdriverPath todo 这里不用指定 webDriver 也能用，不清楚为啥啊
+        System.getProperties().setProperty("webdriver.chrome.driver",
+                webdriverPath);
 
         // 这里不要每次都new ChromeDriver 太耗费资源
         // 这里不存在多线程并发问题，因为所有的线程，都是这一套启动参数
