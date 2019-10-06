@@ -151,7 +151,7 @@
 
         // 获取比赛总场次函数
         function getGameCount() {
-            console.log("比赛总场次");
+            // console.log("比赛总场次");
             $.ajax({
                 type: 'get',
                 url: warName + "/zhua/getGameCount",
@@ -159,7 +159,7 @@
                 dataType: 'text', //dataType 后台返回的数据类型
                 success: function success(data) {
                     if (data != null && data > 0) {
-                        console.log("======================比赛总场次");
+                        // console.log("======================比赛总场次");
                         document.getElementById("trGameCount").style.display = "block";
                         document.getElementById('gameCount').innerText = data;
                         // 2、查询到数据，并且数量大于0，清除比赛总数量轮询
@@ -177,7 +177,7 @@
 
         // 已抓取比赛总数量函数
         function getAlreadyCount() {
-            console.log("已抓取比赛数量");
+            //console.log("已抓取比赛数量");
             // 显示已抓取行
             document.getElementById("trAlreadyCount").style.display = "block";
             $.ajax({
@@ -189,7 +189,7 @@
                     // 比赛总数量
                     var gameCount = document.getElementById('gameCount').innerHTML;
                     if (data == gameCount) {
-                        console.log("======================已抓取比赛数量");
+                        // console.log("======================已抓取比赛数量");
                         // 显示正在下载数据
                         document.getElementById("downLoad").style.display = "block";
                         document.getElementById("downLoadFile").innerHTML = "数据提取完毕，<a href=\"http://localhost:8080/"+warName+"/zhua/download\">点击下载</a>";
