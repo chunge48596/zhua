@@ -314,42 +314,43 @@ public class Zhua7mServiceImpl implements Zhua7mService {
         @Override
         public void run() {
             for (int i = 0, size = weList.size(); i < size; i++) {
-                // 先判断是否是比赛的tr <input type="checkbox" name="hiddenChk" id="hiddenChk3946398" value="3946398" onclick="javascript:showselMdiv(this)">
-                // 取不到元素，直接抛出异常了
-                WebElement input;
                 try {
-                    input = weList.get(i).findElement(By.name("hiddenChk"));
-                } catch (Exception e) {
-                    continue;
-                }
-
-                if (input != null) { // 有比赛
-                    // 找到tr行中 完 用于判断是否需要这个比赛
-                    String complete = weList.get(i).findElement(By.className("state")).getText();
-                    if (complete.equalsIgnoreCase("完")) {
+                    // 先判断是否是比赛的tr <input type="checkbox" name="hiddenChk" id="hiddenChk3946398" value="3946398" onclick="javascript:showselMdiv(this)">
+                    // 取不到元素，直接抛出异常了
+                    WebElement input;
+                    try {
+                        input = weList.get(i).findElement(By.name("hiddenChk"));
+                    } catch (Exception e) {
                         continue;
                     }
 
-                    // 赛事
-                    String sai = weList.get(i).findElement(By.className("match")).getText();
+                    if (input != null) { // 有比赛
+                        // 找到tr行中 完 用于判断是否需要这个比赛
+                        String complete = weList.get(i).findElement(By.className("state")).getText();
+                        if (complete.equalsIgnoreCase("完")) {
+                            continue;
+                        }
 
-                    // 编号
-                    String bianhao = input.getAttribute("value");
+                        // 赛事
+                        String sai = weList.get(i).findElement(By.className("match")).getText();
 
-                    // 比赛时间 只获取没有隐藏的数据
-                    String gameTime = weList.get(i).findElement(By.className("time")).getText();
+                        // 编号
+                        String bianhao = input.getAttribute("value");
 
-                    // 找到tr行中主队
-                    String zhuDui = weList.get(i).findElements(By.tagName("a")).get(0).getText();
+                        // 比赛时间 只获取没有隐藏的数据
+                        String gameTime = weList.get(i).findElement(By.className("time")).getText();
 
-                    // 找到tr行中客队
-                    String keDui = weList.get(i).findElements(By.tagName("a")).get(2).getText();
+                        // 找到tr行中主队
+                        String zhuDui = weList.get(i).findElements(By.tagName("a")).get(0).getText();
+
+                        // 找到tr行中客队
+                        String keDui = weList.get(i).findElements(By.tagName("a")).get(2).getText();
 
 
-                    //System.out.println("===========================比赛队伍：" + zhuDui + " VS " + keDui + "编号：" + bianhao);
+                        //System.out.println("===========================比赛队伍：" + zhuDui + " VS " + keDui + "编号：" + bianhao);
 
-                    System.out.println("线程:" + Thread.currentThread().getId() % threadPoolSize + " 正在抓取," + zhuDui + " VS " + keDui);
-                    // log.info("线程:" + Thread.currentThread().getId() % threadPoolSize + " 正在抓取," + zhuDui + " VS " + keDui);
+                        System.out.println("线程:" + Thread.currentThread().getId() % threadPoolSize + " 正在抓取," + zhuDui + " VS " + keDui);
+                        // log.info("线程:" + Thread.currentThread().getId() % threadPoolSize + " 正在抓取," + zhuDui + " VS " + keDui);
 
 
                     /*if (isZoneZone(bianhao, zhuDui, keDui)) {
@@ -358,14 +359,15 @@ public class Zhua7mServiceImpl implements Zhua7mService {
                         //System.out.println(gameTime + ": " + zhuDui + " VS " + keDui);
                     }*/
 
-                    // 找出所有符合规则的数据
-                    List<Boolean> list = isZoneZone(bianhao, zhuDui, keDui, guiZe);
-                    if (list.get(0)) {
-                        // 成功,打印对应规则信息
-                        result.append(sai + " > " + gameTime + " > " + zhuDui + " VS " + keDui + ",");
-                        //System.out.println("规则" + guiZe + " " + gameTime + ": " + zhuDui + " VS " + keDui);
+                        // 找出所有符合规则的数据
+                        List<Boolean> list = isZoneZone(bianhao, zhuDui, keDui, guiZe);
+                        if (list.get(0)) {
+                            // 成功,打印对应规则信息
+                            result.append(sai + " > " + gameTime + " > " + zhuDui + " VS " + keDui + ",");
+                            //System.out.println("规则" + guiZe + " " + gameTime + ": " + zhuDui + " VS " + keDui);
+                        }
                     }
-
+                } finally {
                     // 统计查了多少场比赛了,放在这里，是因为必须是当前线程已经统计完了，才增加数量
                     count.incrementAndGet();
                     System.out.println(count);
