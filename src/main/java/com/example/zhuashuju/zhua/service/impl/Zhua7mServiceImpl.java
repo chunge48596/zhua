@@ -72,7 +72,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
     // 规则2 最终结果
     private static StringBuffer result2 = null;
     // WebDriver 池
-    private static List<WebDriver> listWd = new ArrayList<>();
+    private static List<WebDriver> listWd = new ArrayList<>(threadPoolSize);
     // 时间格式
     private static final String DATE_FORMAT = "yyyy-MM-dd";
     // 文件名
@@ -286,7 +286,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
      */
     private void closeWebDriverPool() {
         for (int i = 0; i < listWd.size(); i++) {
-            listWd.get(i).close();
+            listWd.get(i).quit();
         }
         listWd.clear();
     }
