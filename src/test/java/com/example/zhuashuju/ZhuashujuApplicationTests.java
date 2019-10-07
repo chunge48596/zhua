@@ -22,8 +22,8 @@ public class ZhuashujuApplicationTests {
 
 	@Test
 	public void testZhuaDataAndCreateFile() {
-		// 抓取规则1
-		service.zhuaDataAndCreateFile(1);
+		// 抓取规则2
+		service.zhuaDataAndCreateFile(2);
 	}
 
 

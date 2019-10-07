@@ -62,7 +62,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
     private String filePath;
 
     // 线程池数量
-    private static Integer threadPoolSize = 16;
+    private static Integer threadPoolSize = 8;
     // 线程安全，自增比赛场次
     public static AtomicInteger count = null;
     // 当天比赛数量
@@ -352,13 +352,6 @@ public class Zhua7mServiceImpl implements Zhua7mService {
                         System.out.println("线程:" + Thread.currentThread().getId() % threadPoolSize + " 正在抓取," + zhuDui + " VS " + keDui);
                         // log.info("线程:" + Thread.currentThread().getId() % threadPoolSize + " 正在抓取," + zhuDui + " VS " + keDui);
 
-
-                    /*if (isZoneZone(bianhao, zhuDui, keDui)) {
-                        // todo 后续把所有抓到的数据，都翻到集合里，进行排序
-                        result.append(sai + " > " + gameTime + " > " + zhuDui + " VS " + keDui + ",");
-                        //System.out.println(gameTime + ": " + zhuDui + " VS " + keDui);
-                    }*/
-
                         // 找出所有符合规则的数据
                         List<Boolean> list = isZoneZone(bianhao, zhuDui, keDui, guiZe);
                         if (list.get(0)) {
@@ -411,8 +404,9 @@ public class Zhua7mServiceImpl implements Zhua7mService {
         } else if (guiZe == 2) {
             /******************************************* 规则2 ***********************************************/
             boolean booleanGuiZe2 = false;
-            int count = getGuiZe2(driver, webElement, zhuKe);
-            if (count >= 0 && count <= 1) {
+            int count = getGuiZe2_optimize(driver, webElement, zhuKe);
+            // 现在只要不存在0:0的比赛，只需要把统计的结果判断是否是0
+            if (count == 0) {
                 booleanGuiZe2 = true;
             }
             listBoolean.add(booleanGuiZe2);
@@ -498,6 +492,121 @@ public class Zhua7mServiceImpl implements Zhua7mService {
         }
         return false;
     }
+
+    /**
+     * 规则2，优化版
+     * 1、主场、客场场数，总场数，不存在0:0
+     * 2、客场总场数 和 客场，不存在0:0
+     * 3、球会友谊的数据排除掉
+     * 4、只要当年的数据
+     *
+     * @param driver
+     * @param webElement
+     * @return
+     */
+    private int getGuiZe2_optimize(WebDriver driver, WebElement webElement, String zhuKe) {
+        Long beginTime = System.currentTimeMillis();
+        try {
+            // 主场总场数所有 tr
+            List<WebElement> listZhuChangAll = new ArrayList<>();
+            try {
+                /**
+                 * https://www.cnblogs.com/yufeihlf/p/5717291.html#test8 这个网址有对 xpath 的介绍
+                 * https://blog.csdn.net/u012941152/article/details/83011110  这个更加的实用
+                 * ".//a[contains(text(),'0-0')]/../.." 下面是对这段表达式的解释
+                 *  .  表示从当前对象下开始找，不加 . 会从跟节点找
+                 *  // 表示从跟节点下找
+                 *  a  表示要查找的节点元素
+                 *  contains 表示包含
+                 *  text(),'0-0' 表示文本 = 0-0
+                 *  /.. 表示当前节点的父节点
+                 *
+                 *  By.xpath("..") 找到当前节点的父节点
+                 */
+                listZhuChangAll = webElement.findElement(By.id("tbTeamHistory_A_all"))
+                        .findElements(By.xpath(".//a[contains(text(),'0-0')]/../.."));
+            } catch (Exception e) {
+                System.out.println("规则2 " + zhuKe + " 主场所有场次>找0-0比赛记录异常" + e);
+            }
+
+            // 主场所有 tr
+            List<WebElement> listZhuChang = new ArrayList<>();
+            try {
+                // 执行 js 方法，显示主场比赛
+                ((JavascriptExecutor) driver).executeScript("showTS('A',1)");
+                listZhuChang = webElement.findElement(By.id("tbTeamHistory_A_home"))
+                        .findElements(By.xpath(".//a[contains(text(),'0-0')]/../.."));
+            } catch (Exception e) {
+                System.out.println("规则2 " + zhuKe + " 主场>找0-0比赛记录异常" + e);
+            }
+
+            // 客场总场数所有 tr
+            List<WebElement> listKeChangAll = new ArrayList<>();
+            try {
+                listKeChangAll = webElement.findElement(By.id("tbTeamHistory_B_all"))
+                        .findElements(By.xpath(".//a[contains(text(),'0-0')]/../.."));
+            } catch (Exception e) {
+                System.out.println("规则2 " + zhuKe + " 客场总场次>找0-0比赛记录异常" + e);
+            }
+
+            // 客场所有 tr
+            List<WebElement> listKeChang = new ArrayList<>();
+            try {
+                // 执行 js 方法，显示客场比赛
+                ((JavascriptExecutor) driver).executeScript("showTS('B',1)");
+                listKeChang = webElement.findElement(By.id("tbTeamHistory_B_away"))
+                        .findElements(By.xpath(".//a[contains(text(),'0-0')]/../.."));
+            } catch (Exception e) {
+                System.out.println("规则2 " + zhuKe + " 客场>找0-0比赛记录异常" + e);
+            }
+
+            // 汇总
+            listZhuChangAll.addAll(listZhuChang);
+            listZhuChangAll.addAll(listKeChangAll);
+            listZhuChangAll.addAll(listKeChang);
+
+            Integer listSize = listZhuChangAll.size();
+
+            // 筛选 tr
+            listZhuChangAll = filterGuiZe2_optimize(listZhuChangAll, zhuKe);
+
+            Long endTime = System.currentTimeMillis();
+            System.out.println("规则2 " + zhuKe + ",共" + listSize + "场比赛，抓取数据消耗时间：" + (endTime - beginTime));
+            return listZhuChangAll.size();
+        } catch (Exception e) {
+            System.out.println(zhuKe + " 规则2，抓取数据异常！！！！");
+            return -1;
+        }
+    }
+
+    /**
+     * 过滤比赛，优化版
+     * 1、不是“球会友谊”
+     * 2、只要当年比赛
+     *
+     * @param list
+     * @return
+     */
+    private List<WebElement> filterGuiZe2_optimize(List<WebElement> list, String zhuKe) {
+        // 排除 赛事 “球会友谊”
+        final String EXCLUDE_GAME_NAME = "球会友谊";
+
+        List<WebElement> newList = new ArrayList<>();
+        WebElement web;
+        for (int i = 0, size = list.size(); i < size; i++) {
+            try {
+                web = list.get(i);
+                // 排除不需要的tr(1、球会友谊 的比赛不要；2、只要当年的数据；)
+                if (!isGameName(web, EXCLUDE_GAME_NAME, zhuKe) && isNowYear(web, zhuKe)) {
+                    newList.add(list.get(i));
+                }
+            } catch (Exception e) {
+                // 异常了说明，当前 tr 不是一个比赛的 tr
+            }
+        }
+        return newList;
+    }
+
 
     /**
      * 规则2
@@ -589,15 +698,10 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             Integer listSize = listZhuChangAll.size();
 
             // 筛选 tr
-            listZhuChangAll = getGuiZe2WebElementList(listZhuChangAll, zhuKe);
+            listZhuChangAll = filterGuiZe2(listZhuChangAll, zhuKe);
 
             //Long endTime111 = System.currentTimeMillis();
             //System.out.println("规则2 " + zhuKe + ",汇总 消耗时间：" + (endTime111 - beginTime));
-
-            if (CollectionUtils.isEmpty(listZhuChangAll)) {
-                // 没有任何比赛
-                return -1;
-            }
 
             Long endTime = System.currentTimeMillis();
             System.out.println("规则2 " + zhuKe + ",共" + listSize + "场比赛，抓取数据消耗时间：" + (endTime - beginTime));
@@ -612,12 +716,12 @@ public class Zhua7mServiceImpl implements Zhua7mService {
      * 过滤比赛
      * 1、不是“球会友谊”
      * 2、只要当年比赛
-     * 3、只要0-0的比赛
+     * 3、只要0-0，或不存在0-0的比赛
      *
      * @param list
      * @return
      */
-    private List<WebElement> getGuiZe2WebElementList(List<WebElement> list, String zhuKe) {
+    private List<WebElement> filterGuiZe2(List<WebElement> list, String zhuKe) {
         // 排除 赛事 “球会友谊”
         final String EXCLUDE_GAME_NAME = "球会友谊";
 
