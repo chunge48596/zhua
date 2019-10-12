@@ -3,6 +3,7 @@ package com.example.zhuashuju.zhua.service;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
 
 public interface Zhua7mService {
 
@@ -32,7 +33,7 @@ public interface Zhua7mService {
      *
      * @return
      */
-    Integer checkPassword(String password);
+    Integer checkPassword(String password) throws ParseException;
 
     /**
      * 获取比赛数量

@@ -114,8 +114,10 @@
                     } else if (data == 2) {
                         // 这里逻辑没用
                         alert("已无抓取次数，请联系管理员！");
-                    } else {
+                    } else if (data == 1){
                         alert("密码错误！");
+                    } else if (data == 999) {
+                        alert("程序不可用！");
                     }
                 },
                 error: function error() {

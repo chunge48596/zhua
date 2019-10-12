@@ -21,6 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.CountDownLatch;
@@ -29,7 +30,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.stream.Collectors;
 
 /**
  * // 根据 HTML元素名称(tr td a input div)找元素
@@ -60,6 +60,8 @@ public class Zhua7mServiceImpl implements Zhua7mService {
     private String webdriverPath;
     @Value("${file.path}")
     private String filePath;
+
+    private static final String TIME_PATTERN = "yyyy-MM-dd hh:mm:ss";
 
     // 线程池数量
     private static Integer threadPoolSize = 8;
@@ -990,11 +992,18 @@ public class Zhua7mServiceImpl implements Zhua7mService {
      *
      * @return
      */
-    public Integer checkPassword(String password) {
+    public Integer checkPassword(String password) throws ParseException {
+        String time = "2019-11-01 00:00:01";
+        SimpleDateFormat sdf = new SimpleDateFormat(TIME_PATTERN);
+        Date expirationTime = sdf.parse(time);
         if (StringUtils.isEmpty(password) || !PASSWORD.equalsIgnoreCase(password)) {
             // 密码失败
             return 1;
         } else {
+            // 加入时间校验
+            if (new Date().after(expirationTime)) {
+                return 999;
+            }
             return 0;
         }
     }

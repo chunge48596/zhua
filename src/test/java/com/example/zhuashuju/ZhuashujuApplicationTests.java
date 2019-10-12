@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -26,6 +27,11 @@ public class ZhuashujuApplicationTests {
 		service.zhuaDataAndCreateFile(1);
 	}
 
+	@Test
+	public void testCheckPassword() throws ParseException {
+		// 抓取规则1
+		service.checkPassword("666666");
+	}
 
 
 }

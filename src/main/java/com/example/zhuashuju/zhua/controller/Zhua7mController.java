@@ -35,7 +35,7 @@ public class Zhua7mController {
     }
 
     @GetMapping("/checkPassword")
-    public Integer checkPassword(@RequestParam String password) {
+    public Integer checkPassword(@RequestParam String password) throws Exception {
         return service.checkPassword(password);
     }
 
