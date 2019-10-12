@@ -178,10 +178,10 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             closeWebDriverPool();
             // Long time2 = System.currentTimeMillis();
             //System.out.println("finally 关闭线程池，销毁webDriver池，共消耗时间" + (time2 - time1));
-            System.out.println("===========程序退出===============");
         }
         Long endTime = System.currentTimeMillis();
         System.out.println(sdf.format(new Date()) + "，规则" + guiZe + "，采集数据总耗时：" + (endTime - beginTime));
+        System.out.println("===========程序退出===============");
         return result.toString();
     }
 
