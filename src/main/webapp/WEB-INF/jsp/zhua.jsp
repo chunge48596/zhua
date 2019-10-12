@@ -135,12 +135,15 @@
                         clearInterval(gameCountTime);
                         clearInterval(alreadyCountTime);
                         document.getElementById("noRepetition").style.display = "block";
-                        ;
                         alert("正在抓取数据，请勿重复操作！");
                     } else if (data == 2) {
                         clearInterval(gameCountTime);
                         clearInterval(alreadyCountTime);
                         alert("系统异常，请联系管理员！");
+                    } else if (data == 0) {
+                        // 显示正在下载数据
+                        document.getElementById("downLoad").style.display = "block";
+                        document.getElementById("downLoadFile").innerHTML = "数据提取完毕，<a href=\"http://localhost:8080/"+warName+"/zhua/download\">点击下载</a>";
                     }
                 },
                 error: function error() {
@@ -190,11 +193,6 @@
                     var gameCount = document.getElementById('gameCount').innerHTML;
                     if (data == gameCount) {
                         // console.log("======================已抓取比赛数量");
-                        // 显示正在下载数据
-                        document.getElementById("downLoad").style.display = "block";
-                        document.getElementById("downLoadFile").innerHTML = "数据提取完毕，<a href=\"http://localhost:8080/"+warName+"/zhua/download\">点击下载</a>";
-
-
                         // 4、已抓取全部比赛，清除轮询器
                         clearInterval(alreadyCountTime);
                     }

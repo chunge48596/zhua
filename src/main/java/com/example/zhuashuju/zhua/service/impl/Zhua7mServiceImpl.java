@@ -166,8 +166,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            System.out.println("===========程序退出===============");
-            // log.info("===========程序退出===============");
+            // Long time1 = System.currentTimeMillis();
             /**
              * 关闭driver quit 表示关闭所有窗口和资源，close 表示关闭当前窗口
              * 这里只关闭主页WebDriver, driver 池不关闭，下次请求直接用，会提升效率
@@ -177,8 +176,9 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             threadPool.shutdown();
             // 销毁 WebDriver 池
             closeWebDriverPool();
-
-
+            // Long time2 = System.currentTimeMillis();
+            //System.out.println("finally 关闭线程池，销毁webDriver池，共消耗时间" + (time2 - time1));
+            System.out.println("===========程序退出===============");
         }
         Long endTime = System.currentTimeMillis();
         System.out.println("总耗时：" + (endTime - beginTime));
