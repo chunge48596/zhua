@@ -181,7 +181,7 @@ public class Zhua7mServiceImpl implements Zhua7mService {
             System.out.println("===========程序退出===============");
         }
         Long endTime = System.currentTimeMillis();
-        System.out.println("总耗时：" + (endTime - beginTime));
+        System.out.println(sdf.format(new Date()) + "，规则" + guiZe + "，采集数据总耗时：" + (endTime - beginTime));
         return result.toString();
     }
 
