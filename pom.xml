@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>3.17</version>
+			<version>4.1.1</version>
 		</dependency>
 
 		<!--selenium 这个version先不改把，能用 ${selenium.version} = 3.14.0-->
